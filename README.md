@@ -41,7 +41,8 @@ const chatloggername = "some-username"
 
 // link to the profile image of the Discord post, direct link to image, current from discordjs.guide
 const imageforlogger = "https://i.imgur.com/AfFp7pu.png"
--------------------------------------------------------
+
+--------------------------------------------------------
 
 create a webhook on your discord server
 use some form of commandline interface - gitbash can work or your imbedded cmd (https://git-scm.com/downloads)
