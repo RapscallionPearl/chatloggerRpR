@@ -110,14 +110,21 @@ function parseMessage(req) {
 function postDiscord(msg) {
 	const payload = `\n[${getTimestamp()}] ${msg.sender}: ${msg.message}`;
 webhookClient.send({
-	content: getTimestamp() + " - " + payload,
+	content: payload,
 	username: chatloggername,
 	avatarURL: imageforlogger,
 	});
 };
 
-// getting a timestamp if you want imperial value prinout then move the // to the other return
-// parts not neede can be removed according to the constants
+/*
+getting a timestamp if you want imperial value prinout then move the // to the other return
+parts not neede can be removed according to the constants
+symbols can be included so a date format like this:
+(30/12 : 09:29:30)
+would looke like this:
+`${day}/${month}" : "${hour}:${minute}:${second}
+symbols between datapoints can be changed as well / to : and such
+*/
 function getTimestamp() {
 	const now = new Date();
   
