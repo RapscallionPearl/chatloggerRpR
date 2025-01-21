@@ -79,7 +79,7 @@ Inside the folder Install discord.js - https://discord.js.org/
 
 Copy chatlogserver.mjs file into the folder and modify the needed lines in the file with the link to the webhook on discord.
 
-In commandline from inside the folder run the server with the command: node chatlogserver.mjs
+In commandline from inside the folder run the server with the command: node chatlogserver.mjs - this only works if you have Node.js installed
 
 Leave the commandline interface running, and the chatlogger will continue to post on your discord.
 
